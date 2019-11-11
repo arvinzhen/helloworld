@@ -1,0 +1,82 @@
+@charset "utf-8";
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+select,input,img,select{vertical-align:top;}
+a{text-decoration: none;color:white;}
+a:hover{color:white;}
+html{
+    width: 100%;
+    height: 100%;
+    overflow-x:hidden; 
+    overflow-y:auto;
+}
+body{
+    width: 100%;
+    min-height: 100%;
+    background: #E8E8E8;
+}
+ul,ol,li{list-style: none;}
+div.top{background: white;}
+div.top>div{height:125px;background: url('/zhanshi/PSD/01as/logo-v1.png') no-repeat left;}
+div.top>div>img{float: right;margin-top:-40px;}
+div.top>div>div{
+    width:365px;margin:0 auto;padding-top:42px;
+}
+div.top>div>div>img{float: left;}
+div.top>div>div>input{width:200px;display: inline;margin-right:-4px;}
+div.top>div>div>select{display: inline !important;border:1px solid #ccc;background: url("/zhanshi/PSD/01as/sicon.png") no-repeat right;padding-right:30px;}
+div.top>div>div>a>img{margin-left:-5px;margin-top:1px;border-bottom:1px solid #0759B6;}
+div.topHaNav{height: 103px;background: #043e80;}
+div.topHaNav>div>li{float:left;width:145px;padding-top:30px;height:73px;text-align:center;background:url("/zhanshi/PSD/01as/nav_bg.jpg") repeat-y;}
+div.topHaNav>div>li>a{display: block;font-size: 18px;}
+div.topHaNav>div>li>a>span{font-size: 14px;}
+div.topHaNav>div>li:hover{background: url("/zhanshi/PSD/01as/nav_onfocus_bg.jpg") repeat-y;}
+div.topHaNav::after{
+    content:'';height:20px;background:white;display: block;clear:both;
+}
+li.top-nav-li{position: relative;}
+li.top-nav-li>ul{display: none;position: absolute;top:100px;z-index: 999;}
+li.top-nav-li>ul>li{height:30px;background:url("/zhanshi/PSD/01as/nav_bg.jpg") repeat-y;width:140px;padding-top:10px;}
+li.top-nav-li>ul>li:hover{background: url("/zhanshi/PSD/01as/nav_onfocus_bg.jpg") repeat-y;}
+li.top-nav-li:hover>ul{display: block;}
+div.lunbo{margin-top:20px;background:white;}
+div.footer{height:134px;background:#043e80;margin-top:40px;}
+div.footer>div>div:first-child{width:200px;padding-top:40px;font-size:24px;color:white;float: left;}
+div.footer>div>div:nth-child(2){height:121px;margin-left:20px;margin-top:30px;}
+div.footer>div>div:nth-child(2)>li{float: left;padding:0 15px 0;border-left:1px solid #999;}
+div.footer>div>div:nth-child(2)>li:first-child{border:none;}
+div.footer>div>div:nth-child(2)>p{color:white;margin-top:25px;}
+div.footer>div>img{float: right;margin-top:15px;}
+div.layui-main{width:1180px;}
+div.banner{position: relative;background:url("/zhanshi/PSD/01as/bannner.png") no-repeat center;height:270px;margin-top:20px;}
+div.banner>div{position: absolute;left:10%;top:50%;color:#0b67bc;margin-top:-34px;}
+div.banner>div>p{font-size: 36px;}
+div.banner>div>span{font-size: 24px;}
+div.zhuti{margin-top:20px;background: white;width:1080px;}
+div.zhuti a{color:black;}
+div.zhuti-left{width:220px;padding:15px;}
+div.zhuti-left>h3{font-size: 54px;position: relative;color:#0B67BC;}
+div.zhuti-left>h3>p{font-size: 24px;line-height:22px;position: absolute;left:50px;top:7px;}
+div.zhuti-left>div>li{background: #E8E8E8;margin-top:20px;text-indent: 2rem;line-height:24px;}
+div.zhuti-right{float: right;width:800px;padding:15px;}
+div.zhuti-right>h3{font-weight: bold;border-bottom:1px solid #ccc;padding-bottom:5px;}
+div.zhuti-right>h3>span{float: right;font-size: 12px;color:#ccc;}
+div.zhuti-right>h3>span>a{color:#ccc;}
+div.zhuti-right>div{margin-top:20px;}
+div.zhuti::after{content:'';display: block;clear: both;}
+li.zs-news{border-bottom:1px dashed #ccc;padding-bottom:8px;}
+li.zs-news>a{color:black;}
+li.zs-news>a:hover{color:red;}
+li.zs-news>span{float: right;}
+/*div.zhuti-left>*/
+div.pro-img{width:200px;height:170px;}
+div.pro-img>img{width:170px;height:170px;}
+div.pro-img>p{height:30px;text-align: center;}
+div.anli{height:160px;padding:20px;border-bottom:1px dashed #ccc;}
+div.anli>img{width:150px;height: 150px;}
+div.fenye>a{padding:15px;float: left;}
+div.layui-form-itme{margin-top:10px;}
+input.layui-input{background: #DBDDE1;}

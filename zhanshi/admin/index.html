@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+    <link rel="stylesheet" href="/layui/css/layui.css">
+    <link rel="stylesheet" type="text/css" href="/zhanshi/css/all.css">
+	<script src="/layui/layui.js" charset="utf-8"></script>
+	<script src="/JQuery/jquery-3.4.1.js"></script>
+</head>
+<body>
+	<div class="layui-main top">
+		<div>
+			<input type="text" name="name" id="name" class="layui-input search" placeholder="请输入您要查找的关键字">
+			<select name="type" id="type" class="layui-select">
+				<option value="1">资讯中心</option>
+				<option value="2">工程案例A</option>
+				<option value="3" selected>产品搜索</option>
+				<option value="4">工程案例B</option>
+			</select>
+			<a  id="sblayui">
+				<img src="/zhanshi/PSD/01as/lsearch.png" >
+			</a>
+		</div>
+		<img src="/zhanshi/PSD/01as/logo-left.png" alt="战石科技">
+	</div>
+	<!--顶部结束-->
+	<div class="topHaNav layui-block">
+		<div class="layui-main">
+			<li>
+				<a href="#">
+					网站首页
+					<br/>
+					<span>HOME</p>
+				</a>
+				<ul>
+					<li></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">
+					关于我们
+					<br/>
+					<span>ABOUT US</p>
+				</a>
+				<ul>
+					<li></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">
+					案例中心
+					<br/>
+					<span>CASE CENTER</p>
+				</a>
+				<ul>
+					<li></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">
+					解决方案
+					<br/>
+					<span>SOLUTION</p>
+				</a>
+				<ul>
+					<li></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">
+					新闻资讯
+					<br/>
+					<span>NEWS</p>
+				</a>
+				<ul>
+					<li></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">
+					产品中心
+					<br/>
+					<span>PRODUCT</p>
+				</a>
+				<ul>
+					<li></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">
+					联系我们
+					<br/>
+					<span>CONTACT US</p>
+				</a>
+				<ul>
+					<li></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">
+					在线留言
+					<br/>
+					<span>MESSAGE</span>
+				</a>
+				<ul>
+					<li></li>
+				</ul>
+			</li>
+		</div>
+	</div>
+	<!-- 导航条结束 -->
+</body>
+<script>
+	layui.use(['layer','jquery'],function (){
+		var $ = layui.$;
+		var layer = layui.layer;
+		$('#sblayui').on('click',function(){
+			var name = $("#name").val();
+			if(!name){
+				layer.msg('asd');return false;
+			}
+			var type = $("#type option:selected").val();
+			switch(type){
+				case '1':
+					window.location.href = "/zhanshi/admin/news/index.php?name="+name;
+					break;
+				case '2':
+					window.location.href = "/zhanshi/admin/aworks/index.php?name="+name;
+					break;
+				case '3':
+					window.location.href = "/zhanshi/admin/product/index.php?name="+name;
+					break;
+				case '4':
+					window.location.href = "/zhanshi/admin/bworks/index.php?name="+name;
+					break;
+				default:
+					break;
+			}
+		});
+	});
+</script>
+</html>
