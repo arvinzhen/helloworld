@@ -1,6 +1,0 @@
-2019-01-21:  1. 添加类别时, 类别父路径[字段sortpath]错误 更新控制器:
-	        yteng/controller/Sort.php, Column.php, Adsort.php  81行为 Sor::where('id', $sor->id)
-	     2. common.php文件中增加函数 getParentPath 用来得到类别的扎有父级 并用 , 链接
-             3. 建立yteng/controller/Getpath,通过更新里面的表名, 全部纠正原来的 类别 path
-
-									
